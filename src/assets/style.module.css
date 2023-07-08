@@ -1,0 +1,97 @@
+*{
+ box-sizing: border-box;
+ margin: 0;
+ padding: 0;
+ font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Oxygen,Ubuntu,Cantarell,"Open Sans","Helvetica Neue",sans-serif;
+}
+.app{
+ display: inline-grid;
+ grid-template-columns: 200px 1fr;
+ gap: 3rem 1.5rem;
+ /* padding: 5rem; */
+ margin: 4rem 7rem;
+}
+.searchInput{
+ padding: 0.5rem;
+ border-radius: 0.25rem;
+ border: none;
+ background-color: #f1f5f8;
+ width: 181px;
+}
+.categories{
+ display: flex;
+ flex-direction: column;
+ gap: 5px;
+}
+.cp{
+ cursor: pointer;
+ color: #617d98;
+}
+.active{
+ color: black;
+}
+.products{
+ display: inline-grid;
+ grid-template-columns: repeat(3, 1fr);
+ gap: 2rem 1.5rem;
+}
+.product{
+ border-radius: 0.25rem;
+ .img{
+  width: 299.33px;
+  height: 175px;
+  display: block;
+  object-fit: contain;
+  img{
+   width: 100%;
+   height: 100%;
+  }
+  }
+  .footer{
+   margin-top: 16px;
+   justify-content: space-between;
+  }
+}
+
+.list{
+  display: flex;
+  flex-direction: column;
+  row-gap: 3rem;
+}
+.productList {
+ display: flex;
+ gap: 2rem;
+ .img{
+  width: 299.33px;
+  height: 175px;
+  display: block;
+  object-fit: contain;
+  img{
+   width: 100%;
+   height: 100%;
+  }
+  }
+  .info{
+   display: flex;
+   flex-direction: column;
+   gap: 5px;
+   width: 614px;
+   .detailsBtn{
+    width: 55px;
+    background-color: #ab7a5f;
+    border: none;
+    border-radius: 0.25rem;
+    color: #FFFFFF;
+    font-size: 0.5rem;
+    padding: 0.25rem 0.5rem;
+    text-transform: uppercase;
+   }
+  }
+}
+.price{
+ color: #ab7a5f;
+}
+.active{
+ background-color: #222;
+ color: #FFF;
+}
